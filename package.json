@@ -2,19 +2,20 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "css-color-names",
   "title": "css color names",
-  "description": "A list of CSS color names with images to search ",
-  "icon": "extension-icon.png",
+  "description": "A list of CSS color names with to search",
+  "icon": "icon.png",
   "author": "ff6347",
-  "owner": "hash",
+  "owner": "ff6347",
+  "access": "private",
   "categories": [
     "Developer Tools"
   ],
   "license": "MIT",
   "commands": [
     {
-      "name": "color-names",
-      "title": "color names",
-      "description": "search the color list",
+      "name": "css-color-names-search",
+      "title": "CSS Color Names Search",
+      "description": "search the named css colors list",
       "mode": "view"
     }
   ],
@@ -24,14 +25,16 @@
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.8",
+    "@technologiestiftung/semantic-release-config": "1.2.4",
     "@types/node": "20.8.10",
     "@types/react": "18.3.3",
     "eslint": "^8.57.0",
     "prettier": "^3.3.3",
+    "semantic-release": "24.1.1",
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "build": "ray build --skip-types -e dist -o dist",
+    "build": "ray build -e dist -o dist",
     "dev": "ray develop",
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
