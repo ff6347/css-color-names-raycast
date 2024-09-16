@@ -23,6 +23,7 @@ const getHue = (hex: string) => {
     case g: h = (b - r) / d + 2; break;
     case b: h = (r - g) / d + 4; break;
   }
+  if (h === undefined) return 0;
 
   return h / 6; // Normalize to [0, 1]
 };
