@@ -1,5 +1,5 @@
-import { ActionPanel, Action,  List } from "@raycast/api";
-import {colors} from './colors';
+import { ActionPanel, Action, List } from "@raycast/api";
+import { colors } from "./colors";
 
 const ITEMS = colors().items.map((item) => {
   return {
@@ -8,7 +8,6 @@ const ITEMS = colors().items.map((item) => {
     hex: item.hex,
     hsl: item.hsl,
     rgb: item.rgb,
-
   };
 });
 
@@ -24,16 +23,17 @@ export default function Command() {
           // accessories={[{ icon: Icon.Text, text: item.accessory }]}
           actions={
             <ActionPanel>
-              <Action.CopyToClipboard content={item.id}
+              <Action.CopyToClipboard
+                content={item.id}
                 title={item.id}
-              shortcut={{ modifiers: ["cmd"], key: "return" }}
+                shortcut={{ modifiers: ["cmd"], key: "return" }}
               />
-                  <Action.CopyToClipboard
+              <Action.CopyToClipboard
                 title={item.hex}
                 content={item.hex}
                 shortcut={{ modifiers: ["opt"], key: "return" }}
               />
-                     <Action.CopyToClipboard
+              <Action.CopyToClipboard
                 title={`hsl ${item.hsl.join(", ")}`}
                 content={item.hsl.join(", ")}
                 shortcut={{ modifiers: ["ctrl"], key: "return" }}

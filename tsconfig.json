@@ -11,7 +11,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
-    "moduleResolution":"NodeNext",
+    "moduleResolution": "NodeNext"
     // "resolveJsonModule": true
   }
 }
