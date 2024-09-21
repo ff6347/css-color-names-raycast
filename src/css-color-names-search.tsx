@@ -38,6 +38,11 @@ export default function Command() {
                 content={item.hsl.join(", ")}
                 shortcut={{ modifiers: ["ctrl"], key: "return" }}
               />
+              <Action.CopyToClipboard
+                title={`rgb ${item.rgb.join(", ")}`}
+                content={item.rgb.join(", ")}
+                shortcut={{ modifiers: ["ctrl", "shift"], key: "return" }}
+              />
             </ActionPanel>
           }
         />
