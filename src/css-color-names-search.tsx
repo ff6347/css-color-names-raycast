@@ -37,20 +37,29 @@ function Item({
       // accessories={[{ icon: Icon.CopyClipboard, text: item.id }]}
       actions={
         <ActionPanel>
+          <Action.Paste
+            icon={Icon.Pencil}
+            content={item.id}
+            title={item.id}
+            shortcut={{ modifiers: [], key: "return" }}
+          />
           <Action.CopyToClipboard content={item.id} title={item.id} shortcut={{ modifiers: ["cmd"], key: "return" }} />
           <Action.CopyToClipboard
             title={item.hex}
             content={item.hex}
+            icon={Icon.CopyClipboard}
             shortcut={{ modifiers: ["opt"], key: "return" }}
           />
           <Action.CopyToClipboard
             title={`hsl ${item.hsl.join(", ")}`}
             content={item.hsl.join(", ")}
+            icon={Icon.CopyClipboard}
             shortcut={{ modifiers: ["ctrl"], key: "return" }}
           />
           <Action.CopyToClipboard
             title={`rgb ${item.rgb.join(", ")}`}
             content={item.rgb.join(", ")}
+            icon={Icon.CopyClipboard}
             shortcut={{ modifiers: ["ctrl", "shift"], key: "return" }}
           />
           {isFavorite ? (
