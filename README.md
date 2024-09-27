@@ -1,15 +1,21 @@
 # css color names
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A Raycast extension that provides list of CSS color names with images to search. Has also hex value, rgb and hsl values.
 
 - Currently sorted by hue
 
-![screenshot](metadata/css-color-names-1.png)
-![screenshot](metadata/css-color-names-2.png)
-![screenshot](metadata/css-color-names-3.png)
+![screenshot](metadata/css-color-names-4.png)
+![screenshot](metadata/css-color-names-5.png)
+![screenshot](metadata/css-color-names-6.png)
+![screenshot](metadata/css-color-names-7.png)
+![screenshot](metadata/css-color-names-8.png)
+![screenshot](metadata/css-color-names-9.png)
 
 ## Installation
 
