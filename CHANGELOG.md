@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ff6347/css-color-names-raycast/compare/v1.2.0...v1.3.0) (2024-09-27)
+
+
+### Features
+
+* Paste default name to frontmost app ([57c8a03](https://github.com/ff6347/css-color-names-raycast/commit/57c8a039a21b20765057d13edce9d6353fb8e0c6))
+
 # [1.2.0](https://github.com/ff6347/css-color-names-raycast/compare/v1.1.0...v1.2.0) (2024-09-26)
 
 
