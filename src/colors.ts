@@ -1,10 +1,17 @@
 const hexToRgb = (hex: string) => {
-  const r = parseInt(hex.slice(1, 3), 16);
-  const g = parseInt(hex.slice(3, 5), 16);
-  const b = parseInt(hex.slice(5, 7), 16);
-  return [r, g, b];
+  // Remove the hash if it's there
+  hex = hex.replace(/^#/, "");
+
+  // Parse the hex values
+  const r = parseInt(hex.slice(0, 2), 16);
+  const g = parseInt(hex.slice(2, 4), 16);
+  const b = parseInt(hex.slice(4, 6), 16);
+
+  // Ensure the values are within the valid range
+  return [Math.min(255, Math.max(0, r)), Math.min(255, Math.max(0, g)), Math.min(255, Math.max(0, b))];
 };
-const getBrightness = (rgb: number[]) => (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000;
+// @ts-ignore
+export const getBrightness = (rgb: number[]) => (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000;
 // Convert hex to HSL and extract hue
 const getHue = (hex: string) => {
   const r = parseInt(hex.slice(1, 3), 16) / 255;
@@ -67,14 +74,15 @@ const rgbToHsl = (r: number, g: number, b: number) => {
 export const colors = () => {
   const c = colorsRaw.items
     .map((color) => {
-      const rgb = hexToRgb(color.hex.split("#")[1]);
+      const hex = color.hex.startsWith("#") ? color.hex : `#${color.hex}`;
+      const rgb = hexToRgb(hex);
       const hsl = rgbToHsl(rgb[0], rgb[1], rgb[2]);
       return {
         hsl,
         rgb,
         title: color.title,
         arg: color.arg,
-        hex: color.hex,
+        hex: hex,
       };
     })
     .sort((a, b) => getHue(a.hex) - getHue(b.hex));
