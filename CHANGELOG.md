@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/ff6347/css-color-names-raycast/compare/v1.3.0...v1.3.1) (2024-09-28)
+
+
+### Bug Fixes
+
+* Color conversion was creating false colors ([764039c](https://github.com/ff6347/css-color-names-raycast/commit/764039c033f476099d2d4965db7a680cb397dd83))
+
 # [1.3.0](https://github.com/ff6347/css-color-names-raycast/compare/v1.2.0...v1.3.0) (2024-09-27)
 
 
