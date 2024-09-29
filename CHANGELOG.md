@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/ff6347/css-color-names-raycast/compare/v1.3.1...v1.3.2) (2024-09-29)
+
+
+### Bug Fixes
+
+* Rename command ([da71c8a](https://github.com/ff6347/css-color-names-raycast/commit/da71c8aee573f8fddbd1d3857c6a11650315111e))
+
 ## [1.3.1](https://github.com/ff6347/css-color-names-raycast/compare/v1.3.0...v1.3.1) (2024-09-28)
 
 
