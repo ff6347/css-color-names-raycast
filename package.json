@@ -1,5 +1,5 @@
 {
-  "version": "1.3.3",
+  "version": "1.3.4",
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "named-css-colors-names",
   "title": "Named CSS Colors search",

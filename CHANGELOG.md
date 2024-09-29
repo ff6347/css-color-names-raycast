@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/ff6347/css-color-names-raycast/compare/v1.3.3...v1.3.4) (2024-09-29)
+
+
+### Bug Fixes
+
+* Remove copy pasta color values ([883c229](https://github.com/ff6347/css-color-names-raycast/commit/883c22942279775f53250c7e06b5c5163162d2b9))
+
 ## [1.3.3](https://github.com/ff6347/css-color-names-raycast/compare/v1.3.2...v1.3.3) (2024-09-29)
 
 
