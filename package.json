@@ -1,8 +1,8 @@
 {
   "version": "1.3.2",
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "named-css-color-names",
-  "title": "Named CSS Color search",
+  "name": "named-css-colors-names",
+  "title": "Named CSS Colors search",
   "description": "A list of CSS color names with to search",
   "icon": "icon.png",
   "author": "ff6347",
@@ -14,8 +14,8 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "named-css-color-search",
-      "title": "Named CSS Color Search",
+      "name": "named-css-colors-search",
+      "title": "Named CSS Colors Search",
       "description": "search the named css colors list",
       "mode": "view"
     }
