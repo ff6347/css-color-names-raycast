@@ -1,11 +1,11 @@
-import { colors } from "../colors";
+import { colors } from "@ff6347/named-css-colors";
 import fs from "fs";
 import path from "path";
 
-const html = colors()
+const html = colors
   .items.map(
     (element) =>
-      `<div class="item" style="background-color: ${element.arg}; width: 100px; height: 100px;"><span class="txt">${element.arg}</span></div>`,
+      `<div class="item" style="background-color: ${element.name}; width: 100px; height: 100px;"><span class="txt">${element.name}</span></div>`,
   )
   .join("\n");
 const document = /*html */ `

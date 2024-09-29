@@ -1,14 +1,14 @@
 import { ActionPanel, Action, List, LocalStorage, Icon, Image } from "@raycast/api";
-import { colors } from "./colors";
+import { colors } from "@ff6347/named-css-colors";
 import { useEffect, useState } from "react";
 // import { useLocalStorage } from "@raycast/utils";
 
 // const FAVORITES_KEY = "favorites";
 
-const ITEMS = colors().items.map((item) => {
+const ITEMS = colors.items.map((item) => {
   return {
-    id: item.arg,
-    name: item.title,
+    id: item.name,
+    name: item.name,
     hex: item.hex,
     hsl: item.hsl,
     rgb: item.rgb,
@@ -97,7 +97,6 @@ export default function Command() {
   const [favorites, setFavorites] = useState<{ [key: string]: string } | null>(null);
   // const { value: todos, setValue: setTodos, isLoading } = useLocalStorage(FAVORITES_KEY,[] );
 
-  const [searchText, setSearchText] = useState("");
 
   const getFavorites = async () => {
     const fav = await LocalStorage.allItems();
