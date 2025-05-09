@@ -28,8 +28,8 @@
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.8",
     "@technologiestiftung/semantic-release-config": "1.2.4",
-    "@types/node": "22.14.1",
-    "@types/react": "18.3.20",
+    "@types/node": "22.15.17",
+    "@types/react": "18.3.21",
     "eslint": "^9.0.0",
     "prettier": "^3.3.3",
     "semantic-release": "24.2.3",
