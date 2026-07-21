@@ -23,7 +23,7 @@
   "dependencies": {
     "@ff6347/named-css-colors": "0.1.1-0",
     "@raycast/api": "^1.82.5",
-    "@raycast/utils": "^1.16.3"
+    "@raycast/utils": "^2.0.0"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.8",
